@@ -1,4 +1,8 @@
 
+## Architecture
+
+
+
 ## Project layout
  Create project codebase structure
 * src/
@@ -8,9 +12,15 @@
     * openai.py
     * stub.py
   * routes/
+  * models/
   * caching/
   * entrypoint.py
 * docs/
+* tests/
+  * unit/
+  * integration/
+
+ This is an initial codebase structure. It will be change during the development. 
 
 Create a pyproject.toml file for specifying dependecies and lint tools
 

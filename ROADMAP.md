@@ -74,3 +74,13 @@ Create a pyproject.toml file for specifying dependecies and lint tools
 | Docker      | docker-compose ... environment | /run/secrets/                              |
 | K8s         | ConfigMap                      | Mount a .secrets file                      |
 | Dev         | .env file                      | .secrets file                              |
+
+
+** Possible bottlenecks or issues
+
+* Redis failure/cache storage failure
+
+* LLM APIs limitations (rates quotas) or failure/not able to respond in time.
+
+* We have to implement a retry mechanism.
+

@@ -1,6 +1,8 @@
 
 ## Architecture
 
+![alt text](https://github.com/torlakee/Camplight-RewriteForge-Service/blob/main/diagram.png)
+
 FastApi app exposing the following HTTP methods:
 
 1. [POST] /v1/rewrite - a method which returns result immediately - synchronious

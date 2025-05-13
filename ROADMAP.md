@@ -65,3 +65,10 @@ Create a pyproject.toml file for specifying dependecies and lint tools
   LLM_API__GEMINI__KEY__1=anotherkey
   
   Different enviroments will use different mechanism to load the config information:
+  
+| Environment | Config Vars                    | Sensitive data/Secrets                     |
+|-------------|--------------------------------|--------------------------------------------|
+| Cloud       | IaC variables                  | Secure stores (Vault, SecretManager, etc.) |
+| Docker      | docker-compose ... environment | /run/secrets/                              |
+| K8s         | ConfigMap                      | Mount a .secrets file                      |
+| Dev         | .env file                      | .secrets file                              |

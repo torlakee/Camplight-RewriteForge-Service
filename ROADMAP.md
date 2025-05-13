@@ -7,14 +7,15 @@
 4. Create LLM adapter interface
 5. Add Redis caching layer
 6. Build local LLM stub
-7. Implement input validation 
-8. Create Dockerfile
-9. Create docker-compose.yml
-10. Create Kubernetes manifests
-11. Set up logging
-12. Prepare unit and integration tests
-13. Prepare README
-14. Deploy to Kubernetes
+7. Implement input validation
+8. Create a scheduler with worker modules or set up a ready product like Celery
+9. Create Dockerfile
+10. Create docker-compose.yml
+11. Create Kubernetes manifests
+12. Set up logging
+13. Prepare unit and integration tests
+14. Prepare README
+15. Deploy to Kubernetes
 
 ## Architecture
 

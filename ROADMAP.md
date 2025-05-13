@@ -76,7 +76,7 @@ Create a pyproject.toml file for specifying dependecies and lint tools
 | Dev         | .env file                      | .secrets file                              |
 
 
-** Possible bottlenecks or issues
+**Possible bottlenecks or issues
 
 * Redis failure/cache storage failure
 

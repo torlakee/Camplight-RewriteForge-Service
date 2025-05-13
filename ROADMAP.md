@@ -1,4 +1,21 @@
 
+## Development Steps - Roadmap
+0. Decide on stack, libraties, tools and enviroment requirments
+1. Scaffold FastAPI project
+2. Design API schema
+3. Implement HTTP endpoints/methods 
+4. Create LLM adapter interface
+5. Add Redis caching layer
+6. Build local LLM stub
+7. Implement input validation 
+8. Create Dockerfile
+9. Create docker-compose.yml
+10. Create Kubernetes manifests
+11. Set up logging
+12. Prepare unit and integration tests
+13. Prepare README
+14. Deploy to Kubernetes
+
 ## Architecture
 
 ![alt text](https://github.com/torlakee/Camplight-RewriteForge-Service/blob/main/diagram.png)

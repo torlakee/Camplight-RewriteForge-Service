@@ -1,6 +1,6 @@
 
 ## Development Steps - Roadmap
-0. Decide on stack, libraties, tools and enviroment requirments
+0. Decide on stack, libraries, tools and enviroment requirments
 1. Scaffold FastAPI project
 2. Design API schema
 3. Implement HTTP endpoints/methods 

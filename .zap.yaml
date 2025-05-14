@@ -1,0 +1,4 @@
+rules:
+  - scanner: passive
+    alertThreshold: Medium
+    attackStrength: Medium

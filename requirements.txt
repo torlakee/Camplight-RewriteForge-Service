@@ -1,0 +1,9 @@
+
+
+fastapi
+uvicorn
+redis
+httpx
+python-dotenv
+pydantic
+sse-starlette

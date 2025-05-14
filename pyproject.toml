@@ -1,0 +1,25 @@
+[project]
+name = "rewriteforge"
+version = "0.1.0"
+description = ""
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "redis",
+    "httpx",
+    "python-dotenv",
+    "pydantic",
+    "sse-starlette"
+]
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "W"]
+exclude = ["tests"]
+
+[tool.bandit]
+skips = ["B101"]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

@@ -1,0 +1,63 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Environment variable files
+.env
+.secrets
+
+# Logs and coverage
+*.log
+*.coverage
+.coverage.*
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Testing
+.pytest_cache/
+.tox/
+
+# VS Code settings
+.vscode/
+
+# MyPy
+.mypy_cache/
+
+# Ruff and Bandit cache
+.ruff_cache/
+
+# PyInstaller
+build/
+dist/
+*.spec
+
+# Docker
+*.tar
+docker-compose.override.yml
+
+# Kubernetes
+*.local.yaml
+
+# IDEs and editors
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Mac OS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Node (if frontend present)
+node_modules/

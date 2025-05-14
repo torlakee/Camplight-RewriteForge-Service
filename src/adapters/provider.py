@@ -1,7 +1,7 @@
 import os
-from openai import OpenAIAdapter
-from adapter import StubAdapter
-from gemini import GeminiAdapter
+from adapters.openai import OpenAIAdapter
+from adapters.stub import StubAdapter
+from adapters.gemini import GeminiAdapter
 
 def provide_llm():
     provider = os.getenv("LLM_PROVIDER", "stub")

@@ -68,3 +68,7 @@ Access the project directory with your terminal/console and follow the instructi
 18. --
 19. Created README.md (as requested in...), containing instructions how to set up dev environment, set up production environment
 20. Created technical documentation
+
+### Possible improvements
+* We can create additiona input validation for scripts, sql injections or suspicious wording in the text passed from the client
+

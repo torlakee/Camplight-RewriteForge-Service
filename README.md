@@ -49,16 +49,17 @@ Access the project directory with your terminal/console and follow the instructi
 4. Created file configurations.py, containing function to load the config and sensitive data
 5. Created separated directory for version v1, in case of future versions
 6. ..
-7. ...
-8. ---
-9. Created unit tests
-10. Created integrated tests
-11. ---
-12. Set up lint tools
-13. --
-14. Added docstrings to each python script following Google Style
-15. Created Dockerfile
-16. Created docker-compose file
-17. --
-18. Created README.md (as requested in...)
-19. Created technical documentation
+7. Created local .env file, containing environment variables (exposed ports, used redis uri, etc. )
+8. Created sample .secrets file, containing sample keys for the available LLM adapters (sensitive data)
+9. ---
+10. Created unit tests
+11. Created integrated tests
+12. ---
+13. Set up lint tools
+14. --
+15. Added docstrings to each python script following Google Style
+16. Created Dockerfile
+17. Created docker-compose file
+18. --
+19. Created README.md (as requested in...)
+20. Created technical documentation

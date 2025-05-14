@@ -48,11 +48,11 @@ Access the project directory with your terminal/console and follow the instructi
 ```
 ## Overview of the work (in details)
 
-1. Created pyproject.toml
-2. Created requirements.txt file
+1. Created pyproject.toml ✔️
+2. Created requirements.txt file ✔️
 3. ...
 4. Created file configurations.py, containing function to load the config and sensitive data
-5. Created separated directory for version v1, in case of future versions
+5. Created separated directory for version v1, in case of future versions ✔️
 6. ..
 7. Created local .env file, containing environment variables (exposed ports, used redis uri, etc. )
 8. Created sample .secrets file, containing sample keys for the available LLM adapters (sensitive data)
@@ -60,13 +60,13 @@ Access the project directory with your terminal/console and follow the instructi
 10. Created unit tests
 11. Created integrated tests
 12. ---
-13. Set up lint tools
+13. Set up lint tools ✔️
 14. --
 15. Added docstrings to each python script following Google Style
-16. Created Dockerfile
-17. Created docker-compose file
+16. Created Dockerfile ✔️
+17. Created docker-compose file ✔️
 18. --
-19. Created README.md (as requested in...), containing instructions how to set up dev environment, set up production environment
+19. Created README.md (as requested in...), containing instructions how to set up dev environment, set up production environment ✔️
 20. Created technical documentation
 
 ### Possible improvements

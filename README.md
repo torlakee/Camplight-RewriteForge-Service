@@ -46,6 +46,16 @@ Access the project directory with your terminal/console and follow the instructi
 ```console
     docker-compose run --rm lint
 ```
+
+### Additional: Generate documentation using docstrings and Sphinx
+```console
+    cd docs
+  
+    Linux/macos: make html
+    Windows: make.bat html
+```
+Open the generated documentation file inside docs/build/index.html
+
 ## Overview of the work (in details)
 0. Created ROADMAP.md file ✔️
 1. Created pyproject.toml ✔️

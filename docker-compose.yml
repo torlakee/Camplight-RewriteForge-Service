@@ -2,18 +2,37 @@ version: '3.9'
 
 services:
   app:
-    build: .
-    ports:
-      - "8000:8000"
+    build:
+      context: .
+    container_name: rewriteforge-app
+    command: uvicorn src.entrypoint:app --host 0.0.0.0 --port 8000 --reload
     volumes:
       - .:/app
+    ports:
+      - "8000:8000"
     env_file:
       - .env
-      - .secrets
+    secrets:
+      - rewriteforge_secrets
     depends_on:
       - redis
 
   redis:
-    image: redis
+    image: redis:7
+    container_name: rewriteforge-redis
     ports:
       - "6379:6379"
+
+  lint:
+    build:
+      context: .
+    container_name: rewriteforge-linter
+    command: bash ./lint_and_scan.sh
+    volumes:
+      - .:/app
+    secrets:
+      - rewriteforge_secrets
+
+secrets:
+  rewriteforge_secrets:
+    file: .secrets

@@ -22,15 +22,19 @@ Access the project directory with your terminal/console and follow the instructi
 1. Create a virtual environment
    
    python -m venv .venv
+   
    Command Prompt: .venv\Scripts\activate
+   
    PowerShell: .\venv\Scripts\Activate.ps1
+   
    Linux/macos: source venv/bin/activate
    
 3. Install python dependencies
    
    pip install --upgrade pip
+   
    pip install -r requirements.txt
 
-4. Start the app using uvicorn
+5. Start the app using uvicorn
 
    uvicorn src.entrypoint:app --reload

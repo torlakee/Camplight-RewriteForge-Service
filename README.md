@@ -16,31 +16,45 @@ services
 
 
 ## Development Environment
-
+### Run manually
 Access the project directory with your terminal/console and follow the instructions:
 
 1. Create a virtual environment
-   
-   python -m venv .venv
-   
-   Command Prompt: .venv\Scripts\activate
-   
-   PowerShell: .\venv\Scripts\Activate.ps1
-   
-   Linux/macos: source venv/bin/activate
-   
+```console
+    python -m venv .venv
+
+    Command Prompt: .venv\Scripts\activate
+
+    PowerShell: .\venv\Scripts\Activate.ps1
+
+    Linux/macos: source venv/bin/activate
+```
 3. Install python dependencies
-   
-   pip install --upgrade pip
-   
-   pip install -r requirements.txt
+```console
+    pip install --upgrade pip
 
+    pip install -r requirements.txt
+```
 5. Start the app using uvicorn
-
-   uvicorn src.entrypoint:app --reload
-
-
-
+```console
+    uvicorn src.entrypoint:app --reload
+```
+### Run using Docker
+```console
+    docker-compose up --build
+```
+### Run linting tools manually
+```console
+    pip install bandit ruff
+   
+    ruff check . --fix
+   
+    bandit -r src -c .bandit.yaml
+```
+### Run linting tools using Docker
+```console
+    docker-compose run --rm lint
+```
 ## Overview of the work (in details)
 
 1. Created pyproject.toml

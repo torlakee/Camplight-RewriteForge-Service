@@ -66,8 +66,8 @@ Open the generated documentation file inside docs/build/index.html
 6. Created base class LLMAdapter ✔️
 7. Created class OpenAIAdapter extending base class LLMAdapter ✔️
 8. Created class GeminiAdapter extending base class LLMAdapter ✔️
-9. Created local .env file, containing environment variables (exposed ports, used redis uri, etc. )
-10. Created sample .secrets file, containing sample keys for the available LLM adapters (sensitive data)
+9. Created local .env file, containing environment variables (exposed ports, used redis uri, etc. ) ✔️
+10. Created sample .secrets file, containing sample keys for the available LLM adapters (sensitive data) ✔️
 11. Created function which provides LLM adapter inside the routers - provide_llm ✔️
 12. Created unit tests
 13. Created integrated tests

@@ -71,4 +71,11 @@ Access the project directory with your terminal/console and follow the instructi
 
 ### Possible improvements
 * We can create additiona input validation for scripts, sql injections or suspicious wording in the text passed from the client
+* We can use third-party tool for queueing the job
+* Regarding health check we can add:
+    * Ping to redis
+    * Retry on time out or connection retrier
+    * Set up a redist cluster
+    * Add Liveness, Readiness and Startup probes to k8s (deployment.yaml)
+    * We can expose Swagger UI and OpenAPI json
 

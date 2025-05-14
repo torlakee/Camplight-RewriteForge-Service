@@ -1,4 +1,4 @@
-from adapters.llmadapter import BaseLLMAdapter
+from adapter import BaseLLMAdapter
 
 class StubAdapter(BaseLLMAdapter):
     async def rewrite(self, text: str, style: str) -> str:

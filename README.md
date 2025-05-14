@@ -91,3 +91,7 @@ Open the generated documentation file inside docs/build/index.html
     * Add Liveness, Readiness and Startup probes to k8s (deployment.yaml)
     * We can expose Swagger UI and OpenAPI json
 
+## In production we can use:
+* Gunicorn and Uvicorn
+* nginx for reverse proxy
+

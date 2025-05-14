@@ -33,6 +33,18 @@ services:
     secrets:
       - rewriteforge_secrets
 
+  test:
+    build: .
+    profiles: ["test"]
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+      - .secrets
+    depends_on:
+      - redis
+    command: "pytest -v"
+
 secrets:
   rewriteforge_secrets:
     file: .secrets

@@ -61,5 +61,5 @@ Access the project directory with your terminal/console and follow the instructi
 16. Created Dockerfile
 17. Created docker-compose file
 18. --
-19. Created README.md (as requested in...)
+19. Created README.md (as requested in...), containing instructions how to set up dev environment, set up production environment
 20. Created technical documentation

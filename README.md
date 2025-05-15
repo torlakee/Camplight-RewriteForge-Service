@@ -46,29 +46,52 @@ Access the project directory with your terminal/console and follow the instructi
 ```console
     docker-compose run --rm lint
 ```
-## Overview of the work (in details)
 
-1. Created pyproject.toml
-2. Created requirements.txt file
+### Additional: Generate documentation using docstrings and Sphinx
+```console
+    cd docs
+  
+    Linux/macos: make html
+    Windows: make.bat html
+```
+Open the generated documentation file inside docs/build/index.html
+
+## Overview of the work (in details)
+0. Created ROADMAP.md file ✔️
+1. Created pyproject.toml ✔️
+2. Created requirements.txt file ✔️
 3. ...
 4. Created file configurations.py, containing function to load the config and sensitive data
-5. Created separated directory for version v1, in case of future versions
-6. ..
-7. Created local .env file, containing environment variables (exposed ports, used redis uri, etc. )
-8. Created sample .secrets file, containing sample keys for the available LLM adapters (sensitive data)
-9. ---
-10. Created unit tests
-11. Created integrated tests
-12. ---
-13. Set up lint tools
-14. --
-15. Added docstrings to each python script following Google Style
-16. Created Dockerfile
-17. Created docker-compose file
-18. --
-19. Created README.md (as requested in...), containing instructions how to set up dev environment, set up production environment
-20. Created technical documentation
+5. Created separated directory for version v1, in case of future versions ✔️
+6. Created base class LLMAdapter ✔️
+7. Created class OpenAIAdapter extending base class LLMAdapter ✔️
+8. Created class GeminiAdapter extending base class LLMAdapter ✔️
+9. Created local .env file, containing environment variables (exposed ports, used redis uri, etc. ) ✔️
+10. Created sample .secrets file, containing sample keys for the available LLM adapters (sensitive data) ✔️
+11. Created function which provides LLM adapter inside the routers - provide_llm ✔️
+12. Created unit tests
+13. Created integrated tests
+14. ---
+15. Set up lint tools ✔️
+16. --
+17. Added docstrings to each python script following Google Style
+18. Created Dockerfile ✔️
+19. Created docker-compose file ✔️
+20. --
+21. Created README.md (as requested in...), containing instructions how to set up dev environment, set up production environment ✔️
+22. Created technical documentation
 
 ### Possible improvements
 * We can create additiona input validation for scripts, sql injections or suspicious wording in the text passed from the client
+* We can use third-party tool for queueing the job
+* Regarding health check we can add:
+    * Ping to redis
+    * Retry on time out or connection retrier
+    * Set up a redist cluster
+    * Add Liveness, Readiness and Startup probes to k8s (deployment.yaml)
+    * We can expose Swagger UI and OpenAPI json
+
+## In production we can use:
+* Gunicorn and Uvicorn
+* nginx for reverse proxy
 

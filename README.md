@@ -105,4 +105,4 @@ Open the generated documentation file inside docs/build/index.html
 * Gunicorn and Uvicorn
 * nginx for reverse proxy
   
-It will be better to isolate the LLM adapter calls in a separate. It will avoid rate limit abuse or any other malicious intents.
+It will be better to isolate the LLM adapter calls in a separate layer. It will avoid rate limit abuse or any other malicious intents.

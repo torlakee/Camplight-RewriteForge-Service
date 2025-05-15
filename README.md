@@ -70,7 +70,7 @@ Open the generated documentation file inside docs/build/index.html
 10. Created sample .secrets file, containing sample keys for the available LLM adapters (sensitive data) ✔️
 11. Created function which provides LLM adapter inside the routers - provide_llm ✔️
 12. Created unit tests
-13. Created integrated tests
+13. Created integrated tests // sample request, expected results
 14. ---
 15. Set up lint tools ✔️
 16. --
@@ -80,6 +80,8 @@ Open the generated documentation file inside docs/build/index.html
 20. --
 21. Created README.md (as requested in...), containing instructions how to set up dev environment, set up production environment ✔️
 22. Created technical documentation
+23. Add possible future improvements
+24. Add possible security measures besides checking with zap, bandit, truffledog, trivy
 
 ### Possible improvements
 * We can create additiona input validation for scripts, sql injections or suspicious wording in the text passed from the client
@@ -90,6 +92,14 @@ Open the generated documentation file inside docs/build/index.html
     * Set up a redist cluster
     * Add Liveness, Readiness and Startup probes to k8s (deployment.yaml)
     * We can expose Swagger UI and OpenAPI json
+* We can put all error message strings into a separate file (for future l10n and i18n)
+* We can add option for adding custom styles to the already set ones - pirate, haiku, formal, ...
+* We can set up a logger instead of using print or better set up the ELK stack
+
+### Possible security measures
+* Add CORS guard/rule
+* The standard http security headers
+* 
 
 ## In production we can use:
 * Gunicorn and Uvicorn

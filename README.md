@@ -107,4 +107,4 @@ Open the generated documentation file inside docs/build/index.html
   
 It will be better to isolate the LLM adapter calls in a separate layer. It will avoid rate limit abuse or any other malicious intents.
 
-It will be better to have a separate requiremenets-dev.txt containing only the dev-related packages - liniting, testing, etc.
+It will be better to have a separate requiremenets-dev.txt containing only the dev-related packages - linting, testing, etc.
